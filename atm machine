@@ -1,0 +1,14 @@
+widrawal=float(input())
+balance=float(input())
+while(balance!=0):
+    if(widrawal>balance):
+        print(balance)
+        break
+    if(widrawal%5==0 and widrawal<balance):
+        balance=balance-(widrawal+0.50)
+        print(round(balance,2))
+        break
+    if(widrawal%5!=0):
+        print("incorrect traction amount")
+        break
+    break
